@@ -5,8 +5,14 @@
 
     <fragment android:id="@+id/fragmentA" android:name="br.com.lucianoluzzi.navigationpoc.FragmentA"
               android:label="FragmentA">
-        <action android:id="@+id/action_fragmentA_to_fragmentB" app:destination="@id/fragmentB"/>
-        <action android:id="@+id/action_fragmentA_to_fragmentC" app:destination="@id/fragmentC"/>
+        <action android:id="@+id/action_fragmentA_to_fragmentB" app:destination="@id/fragmentB"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+        />
+        <action android:id="@+id/action_fragmentA_to_fragmentC" app:destination="@id/fragmentC"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+        />
     </fragment>
     <fragment android:id="@+id/fragmentB" android:name="br.com.lucianoluzzi.navigationpoc.FragmentB"
               android:label="FragmentB"/>
